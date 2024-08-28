@@ -26,7 +26,7 @@
 
                     <div class="mil-review">
                         <div class="mil-stars mil-mb-30">
-                            <img src="img/icons/sm/11.svg" alt="quote">
+                            <img src="{{ asset('frontend/img/icons/sm/11.svg')}}" alt="quote">
                             <ul>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
@@ -50,7 +50,7 @@
 
                     <div class="mil-review">
                         <div class="mil-stars mil-mb-30">
-                            <img src="img/icons/sm/11.svg" alt="quote">
+                            <img src="{{ asset('frontend/img/icons/sm/11.svg')}}" alt="quote">
                             <ul>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
@@ -74,7 +74,7 @@
 
                     <div class="mil-review">
                         <div class="mil-stars mil-mb-30">
-                            <img src="img/icons/sm/11.svg" alt="quote">
+                            <img src="{{ asset('frontend/img/icons/sm/11.svg')}}" alt="quote">
                             <ul>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
@@ -98,7 +98,7 @@
 
                     <div class="mil-review">
                         <div class="mil-stars mil-mb-30">
-                            <img src="img/icons/sm/11.svg" alt="quote">
+                            <img src="{{ asset('frontend/img/icons/sm/11.svg')}}" alt="quote">
                             <ul>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
@@ -122,7 +122,7 @@
 
                     <div class="mil-review">
                         <div class="mil-stars mil-mb-30">
-                            <img src="img/icons/sm/11.svg" alt="quote">
+                            <img src="{{ asset('frontend/img/icons/sm/11.svg')}}" alt="quote">
                             <ul>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
