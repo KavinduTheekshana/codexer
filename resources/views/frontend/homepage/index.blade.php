@@ -4,4 +4,7 @@
 @include('frontend.homepage.partners')
 @include('frontend.components.divider')
 @include('frontend.homepage.services')
+@include('frontend.components.divider')
+@include('frontend.homepage.projects')
+@include('frontend.homepage.testimonials')
 @endsection
