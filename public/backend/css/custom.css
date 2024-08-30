@@ -1,0 +1,7 @@
+.auth .side-img{
+    height: 100vh;
+    object-fit: cover;
+}
+.h-40-logo{
+    height: 40px !important;
+}

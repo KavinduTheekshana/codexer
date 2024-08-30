@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('frontend.homepage.index');
+    // return view('frontend.homepage.index');
+    return view('welcome');
 });
 
 Route::middleware([
