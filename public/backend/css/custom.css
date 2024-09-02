@@ -1,7 +1,30 @@
-.auth .side-img{
+.auth .side-img {
     height: 100vh;
     object-fit: cover;
 }
-.h-40-logo{
+.h-40-logo {
     height: 40px !important;
+}
+.w-80 {
+    width: 70% !important;
+}
+.ml-auto {
+    margin-left: auto !important;
+}
+.mb-22 {
+    margin-bottom: 22px !important;
+}
+.alert-notification {
+    list-style: disc !important;
+    padding-left: 22px !important;
+}
+.invalid-feedback{
+    display: block !important;
+}
+.text-left-table th,td{
+    text-align: left !important;
+}
+.star-rating{
+    display: inline-block !important;
+    margin-right: 2px !important;
 }

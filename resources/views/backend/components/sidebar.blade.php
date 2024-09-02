@@ -4,43 +4,44 @@
     </button>
     <div>
       <a href="index.html" class="sidebar-logo">
-        <img src="{{ asset('backend/images/codexer_dark.svg')}}" alt="site logo" class="light-logo">
+        <img src="{{ asset('backend/images/codexer_dark.svg')}}" alt="site logo" class="light-logo w-80">
         <img src="{{ asset('backend/images/codexer_light.svg')}}" alt="site logo" class="dark-logo">
         <img src="{{ asset('backend/images/favicon.svg')}}" alt="site logo" class="logo-icon">
       </a>
     </div>
     <div class="sidebar-menu-area">
       <ul class="sidebar-menu" id="sidebar-menu">
-        <li class="dropdown">
-          <a href="javascript:void(0)">
+        <li class="sidebar-menu-group-title">Menu</li>
+        <li>
+          <a href="email.html">
             <iconify-icon icon="solar:home-smile-angle-outline" class="menu-icon"></iconify-icon>
             <span>Dashboard</span>
           </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="{{route('testimonials.list')}}">
+            <iconify-icon icon="bi:body-text" class="menu-icon"></iconify-icon>
+            <span>Testimonial</span>
+          </a>
           <ul class="sidebar-submenu">
             <li>
-              <a href="index.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> AI</a>
+              <a href="{{route('testimonials.list')}}"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> List</a>
             </li>
             <li>
-              <a href="index-2.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> CRM</a>
+              <a href="{{route('testimonials.add')}}"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Add</a>
             </li>
-            <li>
-              <a href="index-3.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> eCommerce</a>
-            </li>
-            <li>
-              <a href="index-4.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Cryptocurrency</a>
-            </li>
-            <li>
-              <a href="index-5.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Investment</a>
-            </li>
+
           </ul>
         </li>
-        <li class="sidebar-menu-group-title">Application</li>
-        <li>
-          <a href="email.html">
-            <iconify-icon icon="mage:email" class="menu-icon"></iconify-icon>
-            <span>Email</span>
+
+
+        {{-- <li class="{{ Request::segment(1) === 'testimonial' ? 'active-page' : null }}">
+          <a href="{{route('testimonials.list')}}" class="{{ Request::segment(1) === 'testimonial' ? 'active-page' : null }}">
+            <iconify-icon icon="bi:body-text" class="menu-icon"></iconify-icon>
+            <span>Testimonial</span>
           </a>
-        </li>
+        </li> --}}
         <li>
           <a href="chat-message.html">
             <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
