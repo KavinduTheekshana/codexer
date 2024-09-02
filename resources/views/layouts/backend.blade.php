@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{ asset('backend/css/lib/apexcharts.css') }}">
     <!-- Data Table css -->
     <link rel="stylesheet" href="{{ asset('backend/css/lib/dataTables.min.css') }}">
+    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"> --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
     <!-- Text Editor css -->
     <link rel="stylesheet" href="{{ asset('backend/css/lib/editor-katex.min.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/css/lib/editor.atom-one-dark.min.css') }}">
@@ -65,6 +67,7 @@
     <script src="{{ asset('backend/js/lib/apexcharts.min.js') }}"></script>
     <!-- Data Table js -->
     <script src="{{ asset('backend/js/lib/dataTables.min.js') }}"></script>
+    {{-- <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script> --}}
     <!-- Iconify Font js -->
     <script src="{{ asset('backend/js/lib/iconify-icon.min.js') }}"></script>
     <!-- jQuery UI js -->
@@ -87,6 +90,8 @@
 
     {{-- Sweet Alert  --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 
     @stack('scripts')
 

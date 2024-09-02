@@ -1,3 +1,8 @@
 .mil-review .mil-author img{
     object-fit: cover !important;
 }
+.mil-message-newsletter{
+    color: #fff !important;
+    margin-left: 22px !important;
+    margin-top: 5px !important;
+}
