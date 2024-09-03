@@ -58,14 +58,14 @@
         <div class="row align-items-center">
             <div class="col-md-6 col-xl-6">
 
-                <a href="portfolio.html" class="mil-link mil-mb-30"><span>View All Cases</span><i
+                <a href="{{route('project.all')}}" class="mil-link mil-mb-30"><span>View All Cases</span><i
                         class="fas fa-arrow-right"></i></a>
 
             </div>
             <div class="col-md-6 col-xl-6">
 
                 <div class="mil-adaptive-right">
-                    <a href="contact.html" class="mil-button mil-border mil-mb-30"><span>Get Started</span></a>
+                    <a href="{{route('contact')}}" class="mil-button mil-border mil-mb-30"><span>Get Started</span></a>
                 </div>
 
             </div>

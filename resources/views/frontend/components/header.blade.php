@@ -7,7 +7,8 @@
                 <div class="mil-navigation">
                     <nav>
                         <ul>
-                            <li class="mil-has-children">
+                            <li><a href="{{route('/')}}">Home</a></li>
+                            {{-- <li class="mil-has-children">
                                 <a href="#.">Enterprise</a>
                                 <ul>
                                     <li><a href="about.html">About us</a></li>
@@ -45,7 +46,7 @@
                                     <li><a href="coming-soon.html">Coming Soon</a></li>
                                     <li><a href="404.html">404</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                         </ul>
                         <div class="mil-search-icon">
                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">

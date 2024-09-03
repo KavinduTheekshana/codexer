@@ -53,7 +53,6 @@
     <script src="{{ asset('frontend/js/animtrap/anim-trap.js') }}"></script>
     <script src="{{ asset('frontend/js/animtrap/anim-scroll.js') }}"></script>
 
-
     {{-- <script>
     ANIMSCROLL.init({
         easing: 'ease-in-out-sine'

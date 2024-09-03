@@ -21,10 +21,11 @@
     filter: none !important;
     opacity: 1 !important;
 }
-.text-white-banner a,
-h2 {
+.text-white-banner a, .text-white-banner h2 {
     color: #fff !important;
 }
 .text-dark {
     color: #343a40 !important;
 }
+
+/* loader  */

@@ -65,7 +65,7 @@ class ProjectController extends Controller
 
         Project::create($data);
 
-        return redirect()->route('projects.index')->with('success', 'Project created successfully.');
+        return redirect()->route('projects.list')->with('success', 'Project created successfully.');
     }
 
     public function edit(Project $project)
@@ -111,7 +111,7 @@ class ProjectController extends Controller
         // Update the project
         $project->update($data);
 
-        return redirect()->route('projects.index')->with('success', 'Project updated successfully.');
+        return redirect()->route('projects.list')->with('success', 'Project updated successfully.');
     }
 
     public function destroy(Project $project)
@@ -122,7 +122,7 @@ class ProjectController extends Controller
 
         $project->delete();
 
-        return redirect()->route('projects.index')->with('success', 'Project deleted successfully.');
+        return redirect()->route('projects.list')->with('success', 'Project deleted successfully.');
     }
 
     public function activate($id)
@@ -131,7 +131,7 @@ class ProjectController extends Controller
         $project->status = 1; // Set status to active
         $project->save();
 
-        return redirect()->route('projects.index')->with('success', 'Project activated successfully.');
+        return redirect()->route('projects.list')->with('success', 'Project activated successfully.');
     }
 
     public function deactivate($id)
@@ -140,6 +140,6 @@ class ProjectController extends Controller
         $project->status = 0; // Set status to inactive
         $project->save();
 
-        return redirect()->route('projects.index')->with('success', 'Project deactivated successfully.');
+        return redirect()->route('projects.list')->with('success', 'Project deactivated successfully.');
     }
 }
