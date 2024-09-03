@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HoemController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
@@ -10,6 +11,11 @@ use Illuminate\Support\Facades\Route;
 //     // return view('welcome');
 // });
 Route::get('/', [HoemController::class, 'index'])->name('/');
+Route::get('about', [HoemController::class, 'about'])->name('about');
+Route::get('services', [HoemController::class, 'services'])->name('services');
+Route::get('contact', [HoemController::class, 'contact'])->name('contact');
+Route::get('case', [ProjectController::class, 'projects'])->name('case');
+Route::get('/project/{slug}', [ProjectController::class, 'view'])->name('project.view');
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
 
 Route::middleware([
@@ -32,4 +38,14 @@ Route::middleware([
     // Subscribers
     Route::get('/subscriptions/list', [SubscriptionController::class, 'index'])->name('subscriptions.list');
     Route::delete('/subscriptions/{id}', [SubscriptionController::class, 'destroy'])->name('subscriptions.delete');
+
+    // projects
+    Route::get('/projects/list', [ProjectController::class, 'index'])->name('projects.list');
+    Route::get('/projects/add', [ProjectController::class, 'add'])->name('projects.add');
+    Route::get('projects/show/{id}', [ProjectController::class, 'show'])->name('projects.show');
+    Route::post('projects/{id}/activate', [ProjectController::class, 'activate'])->name('projects.activate');
+    Route::post('projects/{id}/deactivate', [ProjectController::class, 'deactivate'])->name('projects.deactivate');
+
+
+    Route::resource('projects', ProjectController::class);
 });

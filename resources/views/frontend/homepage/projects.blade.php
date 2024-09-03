@@ -24,83 +24,33 @@
 
         <div class="swiper-container mil-works-slider mil-mb-90">
             <div class="swiper-wrapper">
+                @foreach ($projects as $project)
                 <div class="swiper-slide">
 
-                    <a href="project.html" class="mil-card">
+                    <a href="{{ route('project.view', $project->slug) }}" class="mil-card">
                         <div class="mil-cover-frame">
-                            <img src="{{ asset('frontend/img/projects/dan-nelson-ah-HeguOe9k-unsplash.webp')}}" alt="project">
+                            @if ($project->image)
+                                      <img src="{{ asset('storage/' . $project->image) }}"
+                                          alt="{{ $project->name }}">
+                                  @else
+                                      <img src="{{ asset('images/default-image.png') }}" alt="No image available">
+                                  @endif
+
                         </div>
                         <div class="mil-description">
                             <div class="mil-card-title">
-                                <h4 class="mil-mb-10">Threat Detection and Response System</h4>
-                                <h6><span class="mil-accent">Data Security</span></h6>
+                                <h4 class="mil-mb-10">{{$project->title}}</h4>
+                                <h6><span class="mil-accent">{{$project->category}}</span></h6>
                             </div>
                             <div class="mil-card-text">
-                                <p>Create a system that uses machine learning to detect and respond to cybersecurity
-                                    threats in real-time, tailored for businesses that need to protect sensitive
-                                    information.</p>
+                                <p>{{ Str::limit(strip_tags($project->message), 120) }}</p>
                             </div>
                         </div>
                     </a>
 
                 </div>
-                <div class="swiper-slide">
+                @endforeach
 
-                    <a href="project.html" class="mil-card">
-                        <div class="mil-cover-frame">
-                            <img src="{{ asset('frontend/img/projects/microsoft-365-1MeZCPon3vk-unsplash.webp')}}" alt="project">
-                        </div>
-                        <div class="mil-description">
-                            <div class="mil-card-title">
-                                <h4 class="mil-mb-10">Content Management System (CMS)</h4>
-                                <h6><span class="mil-accent">Web Development</span></h6>
-                            </div>
-                            <div class="mil-card-text">
-                                <p>Design a lightweight, user-friendly CMS for small businesses, with drag-and-drop
-                                    functionality and customizable templates.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide">
-
-                    <a href="project.html" class="mil-card">
-                        <div class="mil-cover-frame">
-                            <img src="{{ asset('frontend/img/projects/arlington-research-nFLmPAf9dVc-unsplash.webp')}}" alt="project">
-                        </div>
-                        <div class="mil-description">
-                            <div class="mil-card-title">
-                                <h4 class="mil-mb-10">Market Research Platform</h4>
-                                <h6><span class="mil-accent">Analytics and Research</span></h6>
-                            </div>
-                            <div class="mil-card-text">
-                                <p>Create a platform that automates the process of gathering, analyzing, and visualizing
-                                    market research data, enabling businesses to make data-driven decisions.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide">
-
-                    <a href="project.html" class="mil-card">
-                        <div class="mil-cover-frame">
-                            <img src="{{ asset('frontend/img/projects/jakub-zerdzicki-QgMACSorlBA-unsplash.webp')}}" alt="project">
-                        </div>
-                        <div class="mil-description">
-                            <div class="mil-card-title">
-                                <h4 class="mil-mb-10">Smart Home Energy Management System</h4>
-                                <h6><span class="mil-accent">Home Automation</span></h6>
-                            </div>
-                            <div class="mil-card-text">
-                                <p>Develop a solution that optimizes energy use in a home by automatically adjusting
-                                    lighting, heating, and appliance settings based on occupancy and time of day.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
 
 
             </div>

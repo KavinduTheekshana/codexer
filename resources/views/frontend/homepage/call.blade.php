@@ -7,7 +7,7 @@
         <div class="mil-cta-content">
             <span class="mil-suptitle mil-light-soft mil-suptitle-2 mil-mb-30">Transform Your Business with Codexer’s Expertise</span>
             <h2 class="mil-h1 mil-light mil-mb-30">Start leveraging our <span class="mil-accent">IT</span> and <span class="mil-accent">IoT</span> solutions today.</h2>
-            <a href="prices.html" class="mil-link"><span class="mil-light">Learn More</span><i class="fas fa-arrow-right"></i></a>
+            <a href="{{route('services')}}" class="mil-link"><span class="mil-light">Learn More</span><i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </section>

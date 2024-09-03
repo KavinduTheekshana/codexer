@@ -1,8 +1,30 @@
-.mil-review .mil-author img{
+.mil-review .mil-author img {
     object-fit: cover !important;
 }
-.mil-message-newsletter{
+.mil-message-newsletter {
     color: #fff !important;
     margin-left: 22px !important;
     margin-top: 5px !important;
+}
+.overlay {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #181e26 0%, #181e264d 100%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.project-header {
+    filter: none !important;
+    opacity: 1 !important;
+}
+.text-white-banner a,
+h2 {
+    color: #fff !important;
+}
+.text-dark {
+    color: #343a40 !important;
 }

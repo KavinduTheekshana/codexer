@@ -37,6 +37,25 @@
                 </ul>
             </li>
 
+            <li class="dropdown">
+                <a href="{{ route('projects.list') }}">
+                    <iconify-icon icon="solar:document-text-outline" class="menu-icon"></iconify-icon>
+                    <span>Projects</span>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ route('projects.list') }}"><i
+                                class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> List</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('projects.add') }}"><i
+                                class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Add</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
             <li>
                 <a href="{{ route('subscriptions.list') }}">
                     <iconify-icon icon="iconamoon:news-thin" class="menu-icon"></iconify-icon>
