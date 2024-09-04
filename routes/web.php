@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HoemController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SubscriptionController;
@@ -18,6 +19,8 @@ Route::get('case', [ProjectController::class, 'projects'])->name('case');
 Route::get('/project/{slug}', [ProjectController::class, 'view'])->name('project.view');
 Route::get('/project/all', [ProjectController::class, 'view'])->name('project.all');
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
+Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+
 
 Route::middleware([
     'auth:sanctum',

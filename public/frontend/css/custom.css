@@ -30,3 +30,9 @@
 .mil-post-sm .mil-description{
     width: 100% !important;
 }
+.text-danger-message{
+    color: #dc3545 !important;
+}
+.text-success-message{
+    color: #28a745 !important;
+}
