@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codexer | Transforming Ideas into Digital Reality</title>
     <link rel="icon" type="image/png" href="{{ asset('backend/images/favicon.svg') }}" sizes="16x16">

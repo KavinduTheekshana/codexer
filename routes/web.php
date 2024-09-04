@@ -53,4 +53,9 @@ Route::middleware([
 
     // Contact
     Route::get('/contact/list', [ContactController::class, 'index'])->name('contact.list');
+    Route::resource('contacts', ContactController::class);
+    Route::post('contacts/{id}/activate', [ContactController::class, 'activate'])->name('contacts.activate');
+    Route::post('contacts/{id}/deactivate', [ContactController::class, 'deactivate'])->name('contacts.deactivate');
+    Route::delete('contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy');
+    Route::get('contacts/show/{contact}', [ContactController::class, 'show'])->name('contacts.show');
 });

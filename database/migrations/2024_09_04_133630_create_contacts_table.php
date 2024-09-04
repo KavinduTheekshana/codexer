@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('role');
             $table->string('product_design');
             $table->text('project_description');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

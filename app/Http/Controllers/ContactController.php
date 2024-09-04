@@ -12,16 +12,38 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::all();
+        $contacts = Contact::orderBy('created_at', 'desc')->get();
         return view('backend.contact.list', compact('contacts'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function show($id)
     {
-        //
+        $contact = Contact::findOrFail($id);
+        return response()->json($contact);
+    }
+
+    public function activate($id)
+    {
+        $contact = Contact::findOrFail($id);
+        $contact->status = 1; // Set status to active
+        $contact->save();
+
+        return redirect()->route('projects.list')->with('success', 'Project activated successfully.');
+    }
+
+    public function deactivate($id)
+    {
+        $contact = Contact::findOrFail($id);
+        $contact->status = 0; // Set status to inactive
+        $contact->save();
+
+        return redirect()->route('projects.list')->with('success', 'Project deactivated successfully.');
+    }
+
+    public function destroy(Contact $contact)
+    {
+        $contact->delete();
+        return response()->json(['success' => 'Contact deleted successfully']);
     }
 
     /**
@@ -46,37 +68,5 @@ class ContactController extends Controller
 
         // Return a JSON response to the AJAX request
         return response()->json(['success' => 'Your message has been sent successfully.']);
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Contact $contact)
-    {
-        //
     }
 }

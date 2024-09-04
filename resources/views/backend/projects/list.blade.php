@@ -155,34 +155,6 @@
 </script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.delete-btn').forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
-                const form = button.closest('.delete-form');
-                const actionUrl = form.getAttribute('data-action');
-
-                Swal.fire({
-                    title: 'Are you sure?',
-                    text: 'This action cannot be undone.',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!',
-                    cancelButtonText: 'Cancel'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        form.setAttribute('action', actionUrl);
-                        form.submit();
-                    }
-                });
-            });
-        });
-    });
-</script>
-
-<script>
     $(document).ready(function() {
         $('.status-btn').on('click', function() {
             var form = $(this).closest('form');
