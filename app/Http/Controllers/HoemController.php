@@ -22,4 +22,14 @@ class HoemController extends Controller
     {
         return view('frontend.contact.index');
     }
+    public function projects()
+    {
+        // $projects = Project::where('status', 1)->latest()->take(5)->get();
+        $projects = Project::orderBy('created_at', 'desc')->paginate(5);
+        return view('frontend.projects.index', compact('projects'));
+    }
+    public function services()
+    {
+        return view('frontend.services.index');
+    }
 }

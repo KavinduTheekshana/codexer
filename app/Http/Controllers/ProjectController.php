@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 
 class ProjectController extends Controller
 {
-    public function projects()
+    public function case()
     {
         // $testimonials = Testimonial::latest()->take(5)->get();
         // $projects = Project::where('status', 1)->latest()->take(5)->get();

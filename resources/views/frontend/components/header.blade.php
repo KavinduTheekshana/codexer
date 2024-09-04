@@ -9,6 +9,8 @@
                         <ul>
                             <li><a href="{{route('/')}}">Home</a></li>
                             <li><a href="{{route('about')}}">About us</a></li>
+                            <li><a href="{{route('services')}}">Services</a></li>
+                            <li><a href="{{route('projects.all')}}">Projects</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
                             {{-- <li class="mil-has-children">
                                 <a href="#.">Enterprise</a>
