@@ -7,11 +7,12 @@
                 <div class="mil-navigation">
                     <nav>
                         <ul>
-                            <li><a href="{{route('/')}}">Home</a></li>
-                            <li><a href="{{route('about')}}">About us</a></li>
-                            <li><a href="{{route('services')}}">Services</a></li>
-                            <li><a href="{{route('projects.all')}}">Projects</a></li>
-                            <li><a href="{{route('contact')}}">Contact</a></li>
+                            <li><a class="{{ request()->is('/') ? 'active' : '' }}" href="{{ route('/') }}">Home</a></li>
+                            <li><a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
+                            {{-- <li><a class="{{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a></li> --}}
+                            <li><a class="{{ request()->routeIs('projects.all') ? 'active' : '' }}" href="{{ route('projects.all') }}">Projects</a></li>
+                            <li><a class="{{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
+
                             {{-- <li class="mil-has-children">
                                 <a href="#.">Enterprise</a>
                                 <ul>
