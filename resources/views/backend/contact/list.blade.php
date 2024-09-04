@@ -37,10 +37,10 @@
                             <td>
                                 @if ($contact->status)
                                     <span
-                                        class="bg-success-focus text-success-main px-24 py-4 rounded-pill fw-medium text-sm">Active</span>
+                                        class="bg-success-focus text-success-main px-24 py-4 rounded-pill fw-medium text-sm">Read</span>
                                 @else
                                     <span
-                                        class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Deactive</span>
+                                        class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Unread</span>
                                 @endif
                             </td>
                             <td>{{ $contact->created_at->format('d M Y') }}</td>
@@ -51,7 +51,7 @@
                                         method="POST" style="display:inline;">
                                         @csrf
                                         <button type="button"
-                                            class="btn btn-success btn-sm status-btn">Activate</button>
+                                            class="btn btn-success btn-sm status-btn">Read</button>
                                     </form>
                                 @else
                                     <!-- Deactivate Button -->
@@ -60,7 +60,7 @@
                                         style="display:inline;">
                                         @csrf
                                         <button type="button"
-                                            class="btn btn-secondary btn-sm status-btn">Deactivate</button>
+                                            class="btn btn-secondary btn-sm status-btn">Unread</button>
                                     </form>
                                 @endif
 
@@ -83,22 +83,6 @@
     </div>
 </div>
 
-{{-- <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content radius-16 bg-base">
-            <div class="modal-header">
-                <h5 class="modal-title" id="viewModalLabel">Project Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Content will be loaded here via JavaScript -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div> --}}
 
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
     aria-hidden="true">
@@ -193,9 +177,9 @@
             var form = $(this).closest('form');
             var actionUrl = form.data('action');
             var actionType = $(this).text().trim();
-            var confirmationMessage = actionType === 'Activate' ?
-                'Are you sure you want to activate this project?' :
-                'Are you sure you want to deactivate this project?';
+            var confirmationMessage = actionType === 'Read' ?
+                'Are you sure you want to mark as read this Contact?' :
+                'Are you sure you want to mark as unread this Contact?';
 
             Swal.fire({
                 title: 'Are you sure?',
@@ -215,7 +199,7 @@
                         success: function(response) {
                             Swal.fire(
                                 'Success!',
-                                'Project status has been updated.',
+                                'Contact status has been updated.',
                                 'success'
                             ).then(() => {
                                 window.location
@@ -240,7 +224,7 @@
 
             Swal.fire({
                 title: 'Are you sure?',
-                text: 'Do you really want to delete this project?',
+                text: 'Do you really want to delete this Contact?',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
