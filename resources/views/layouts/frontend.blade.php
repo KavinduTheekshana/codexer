@@ -29,7 +29,7 @@
     @stack('styles')
     <title>Codexer | Transforming Ideas into Digital Reality</title>
 
-    @vite(['resources/js/app.js'])
+    {{-- @vite(['resources/js/app.js']) --}}
 </head>
 
 <body>
