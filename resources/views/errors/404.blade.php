@@ -15,14 +15,9 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/plugins/bootstrap-grid.css') }}">
     <!-- font awesome css -->
     <link rel="stylesheet" href="{{ asset('frontend/css/plugins/font-awesome.min.css') }}">
-    <!-- swiper css -->
-    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/plugins/swiper.min.css') }}"> --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- itsulu css -->
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}">
-    {{-- Animreap --}}
-    <link rel="stylesheet" href="{{ asset('frontend/css/animtrap/animtrap.css') }}">
+
     @stack('styles')
     <title>Codexer | Transforming Ideas into Digital Reality</title>
 
@@ -149,14 +144,9 @@
     <!-- jQuery js -->
     <script src="{{ asset('frontend/js/plugins/jquery.min.js') }}"></script>
     <!-- swiper js -->
-    {{-- <script src="{{ asset('frontend/js/plugins/swiper.min.js') }}"></script> --}}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- itsulu js -->
     <script src="{{ asset('frontend/js/main.js') }}"></script>
-    <script src="{{ asset('frontend/js/custom.js') }}"></script>
-    {{-- Animtrap  --}}
-    <script src="{{ asset('frontend/js/animtrap/anim-trap.js') }}"></script>
-    <script src="{{ asset('frontend/js/animtrap/anim-scroll.js') }}"></script>
+
 
     {{-- <script>
     ANIMSCROLL.init({

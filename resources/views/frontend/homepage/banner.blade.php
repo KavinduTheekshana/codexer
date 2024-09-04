@@ -3,7 +3,7 @@
     <div class="swiper-container mil-banner-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="{{ asset('frontend/img/photo/1-2.jpg')}}" class="mil-background-image" style="object-position: center" data-swiper-parallax-scale="1.1" alt="image">
+                <img src="{{ asset('frontend/img/photo/1-2.jpg')}}" class="mil-background-image" style="object-position: center" data-swiper-parallax-scale="1.1" alt="image" loading="lazy">
                 <div class="mil-overlay"></div>
 
                 <div class="mil-banner-content-2" data-swiper-parallax-y="300" data-swiper-parallax-duration="600" data-swiper-parallax-opacity="0">

@@ -1,6 +1,6 @@
       <!-- top bar -->
       <div class="mil-top-position mil-fixed">
-        <div class="mil-top-panel mil-top-panel-transparent mil-animated">
+        <div class="mil-top-panel {{ Request::is('/') ? 'mil-top-panel-transparent mil-animated' : '' }}">
             <!-- mil-top-panel-transparent -->
             <div class="container">
                 <a href="home-1.html" class="mil-logo" style="width: 140px"></a>
@@ -8,6 +8,8 @@
                     <nav>
                         <ul>
                             <li><a href="{{route('/')}}">Home</a></li>
+                            <li><a href="{{route('about')}}">About us</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
                             {{-- <li class="mil-has-children">
                                 <a href="#.">Enterprise</a>
                                 <ul>

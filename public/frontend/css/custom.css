@@ -27,5 +27,6 @@
 .text-dark {
     color: #343a40 !important;
 }
-
-/* loader  */
+.mil-post-sm .mil-description{
+    width: 100% !important;
+}

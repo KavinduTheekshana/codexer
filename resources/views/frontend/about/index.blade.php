@@ -1,0 +1,11 @@
+@extends('layouts.frontend')
+@section('content')
+@section('page_name', 'About us')
+@include('frontend.components.banner')
+@include('frontend.about.call')
+@include('frontend.about.about')
+@include('frontend.components.partners')
+@include('frontend.about.mission')
+@include('frontend.about.why')
+@include('frontend.about.features')
+@endsection
