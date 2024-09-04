@@ -7,7 +7,7 @@
 
 
 
-    @section('page_name', 'Subscribers')
+    @section('page_name', 'Contact Us')
     @include('backend.components.breadcrumb')
 
     @include('backend.components.alert')
@@ -25,23 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($subscriptions as $subscription)
-                        <tr>
-                            <td>{{ $subscription->id }}</td>
-                            <td>{{ $subscription->email }}</td>
-                            <td>{{ $subscription->created_at->format('d M Y') }}</td>
-                            <td>
-                                {{-- <a href="{{ route('subscriptions.delete', $subscription->id) }}"
-                                    class="btn btn-danger btn-sm">Delete</a> --}}
-                                    <form class="delete-form" action="{{ route('subscriptions.delete', $subscription->id) }}" method="POST" style="display:inline;">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="button" class="btn btn-danger btn-sm delete-btn">Delete</button>
-                                    </form>
 
-                            </td>
-                        </tr>
-                    @endforeach
                 </tbody>
             </table>
         </div>

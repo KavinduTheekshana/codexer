@@ -49,7 +49,8 @@ Route::middleware([
     Route::get('projects/show/{id}', [ProjectController::class, 'show'])->name('projects.show');
     Route::post('projects/{id}/activate', [ProjectController::class, 'activate'])->name('projects.activate');
     Route::post('projects/{id}/deactivate', [ProjectController::class, 'deactivate'])->name('projects.deactivate');
-
-
     Route::resource('projects', ProjectController::class);
+
+    // Contact
+    Route::get('/contact/list', [ContactController::class, 'index'])->name('contact.list');
 });

@@ -55,11 +55,17 @@
                 </ul>
             </li>
 
+            <li>
+                <a href="{{route('contact.list')}}">
+                    <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
+                    <span>Contact</span>
+                </a>
+            </li>
 
             <li>
                 <a href="{{ route('subscriptions.list') }}">
                     <iconify-icon icon="iconamoon:news-thin" class="menu-icon"></iconify-icon>
-                    <span>Subscription</span>
+                    <span>Subscribers</span>
                 </a>
             </li>
 
