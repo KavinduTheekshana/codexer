@@ -9,7 +9,7 @@
                         <ul>
                             <li><a class="{{ request()->is('/') ? 'active' : '' }}" href="{{ route('/') }}">Home</a></li>
                             <li><a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
-                            {{-- <li><a class="{{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a></li> --}}
+                            <li><a class="{{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a></li>
                             <li><a class="{{ request()->routeIs('projects.all') ? 'active' : '' }}" href="{{ route('projects.all') }}">Projects</a></li>
                             <li><a class="{{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
 
