@@ -29,10 +29,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.svg') }}">
 
     <!-- bootstrap grid css -->
-    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/plugins/bootstrap-grid.css') }}"> --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+    <link rel="stylesheet" href="{{ asset('frontend/css/plugins/bootstrap-grid.css') }}">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
         integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css"> --}}
     <!-- font awesome css -->
     <link rel="stylesheet" href="{{ asset('frontend/css/plugins/font-awesome.min.css') }}">

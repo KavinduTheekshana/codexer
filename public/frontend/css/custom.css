@@ -39,3 +39,8 @@
 .active{
     color: rgb(245, 124, 0) !important;
 }
+@media screen and (max-width: 768px) {
+    .mil-top-res-100{
+        margin-top: 100px !important;
+    }
+}
