@@ -45,7 +45,6 @@ class ContactController extends Controller
         $contact->delete();
         return response()->json(['success' => 'Contact deleted successfully']);
     }
-
     /**
      * Store a newly created resource in storage.
      */

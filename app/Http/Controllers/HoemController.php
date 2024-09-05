@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\Project;
+use App\Models\Subscription;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -36,4 +38,5 @@ class HoemController extends Controller
     {
         return view('frontend.faq.index');
     }
+
 }

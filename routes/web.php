@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HoemController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SubscriptionController;
@@ -33,9 +34,14 @@ Route::middleware([
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
     // })->name('dashboard');
-    Route::get('/dashboard', function () {
-        return view('backend.dashboard.index');
-    })->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+    Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
+    Route::patch('/profile/update/user', [DashboardController::class, 'update'])->name('profile.update.user');
+    Route::patch('/profile/update-password', [DashboardController::class, 'updatePassword'])->name('profile.update.password');
+
+    // Route::get('/dashboard', function () {
+    //     return view('backend.dashboard.index');
+    // })->name('dashboard');
 
     // Testimonial
     Route::get('/testimonials/list', [TestimonialController::class, 'index'])->name('testimonials.list');

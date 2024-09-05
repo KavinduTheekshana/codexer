@@ -13,7 +13,7 @@
         <ul class="sidebar-menu" id="sidebar-menu">
             <li class="sidebar-menu-group-title">Menu</li>
             <li>
-                <a href="email.html">
+                <a href="{{route('dashboard')}}">
                     <iconify-icon icon="solar:home-smile-angle-outline" class="menu-icon"></iconify-icon>
                     <span>Dashboard</span>
                 </a>
