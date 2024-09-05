@@ -28,8 +28,8 @@
                    <div class="row justify-content-between mil-p-120-60">
                        <div class="col-md-3 col-lg-3 col-xl-3 mil-mb-30">
 
-                           <img src="img/logo/logo-light.png" alt="" class="mil-logo mil-mb-60"
-                               style="width: 140px">
+                           <img src="{{asset('frontend/img/logo/codexer_light.svg')}}" alt="" class="mil-logo mb-3"
+                               style="width: 180px">
 
                            <p class="mil-light mil-light-soft" style="margin-bottom: 45px">24 Colston Rise, Ampthill,
                                <br>
@@ -64,9 +64,6 @@
                                        <li>
                                            <a href="#.">Twitter</a>
                                        </li>
-                                       <li>
-                                           <a href="#.">YouTube</a>
-                                       </li>
                                    </ul>
 
                                </div>
@@ -75,21 +72,17 @@
                                    <h4 class="mil-list-title mil-light mil-mb-60">Support</h4>
 
                                    <ul class="mil-hover-link-list mil-light">
+
                                        <li>
-                                           <a href="#.">Documentation</a>
+                                           <a href="{{route('contact')}}">Support</a>
                                        </li>
                                        <li>
-                                           <a href="#.">Support</a>
+                                           <a href="{{route('faq')}}">FAQs</a>
                                        </li>
                                        <li>
-                                           <a href="#.">FAQs</a>
+                                           <a href="#.">Careers</a>
                                        </li>
-                                       <li>
-                                           <a href="#.">Download</a>
-                                       </li>
-                                       <li>
-                                           <a href="#.">Sitemap</a>
-                                       </li>
+
                                    </ul>
 
                                </div>
@@ -99,20 +92,18 @@
 
                                    <ul class="mil-hover-link-list mil-light">
                                        <li>
-                                           <a href="#.">About Us</a>
+                                           <a href="{{route('about')}}">About Us</a>
                                        </li>
                                        <li>
-                                           <a href="#.">Terms & condition</a>
+                                           <a href="{{route('services')}}">Services</a>
                                        </li>
                                        <li>
-                                           <a href="#.">Privacy Policy</a>
+                                           <a href="{{route('projects.all')}}">Projects</a>
                                        </li>
                                        <li>
-                                           <a href="#.">Partners</a>
+                                           <a href="{{route('contact')}}">Contact</a>
                                        </li>
-                                       <li>
-                                           <a href="#.">Press</a>
-                                       </li>
+
                                    </ul>
 
                                </div>

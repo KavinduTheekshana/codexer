@@ -17,6 +17,7 @@ Route::get('services', [HoemController::class, 'services'])->name('services');
 Route::get('contact', [HoemController::class, 'contact'])->name('contact');
 Route::get('projects/all', [HoemController::class, 'projects'])->name('projects.all');
 Route::get('services', [HoemController::class, 'services'])->name('services');
+Route::get('faq', [HoemController::class, 'faq'])->name('faq');
 Route::get('case', [ProjectController::class, 'case'])->name('case');
 Route::get('/project/{slug}', [ProjectController::class, 'view'])->name('project.view');
 Route::get('/project/all', [ProjectController::class, 'view'])->name('project.all');

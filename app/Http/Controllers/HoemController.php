@@ -32,4 +32,8 @@ class HoemController extends Controller
     {
         return view('frontend.services.index');
     }
+    public function faq()
+    {
+        return view('frontend.faq.index');
+    }
 }
