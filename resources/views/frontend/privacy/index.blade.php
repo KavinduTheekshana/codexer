@@ -89,7 +89,7 @@
                 <p class="mil-mb-30">We reserve the right to amend this privacy policy at any time. We will not send individual email
                     notifications of updates. Any amendments will be posted on this page. You are therefore encouraged
                     to visit this page periodically.</p>
-                <h3 class="mil-up-font mil-mb-30">Changes to the Policy</h3>
+                <h3 class="mil-up-font mil-mb-30">Contact Information</h3>
                 <p class="mil-mb-30">For more information about our privacy policy or to escalate any complaints, please contact our data
                     protection officer at info@codexer.co.uk. You also have the right to lodge a complaint with a
                     relevant supervisory authority if you identify that your personal information shared with us is
