@@ -28,8 +28,8 @@
                    <div class="row justify-content-between mil-p-120-60">
                        <div class="col-md-3 col-lg-3 col-xl-3 mil-mb-30">
 
-                           <img src="{{asset('frontend/img/logo/codexer_light.svg')}}" alt="" class="mil-logo mb-3"
-                               style="width: 180px">
+                           <img src="{{ asset('frontend/img/logo/codexer_light.svg') }}" alt=""
+                               class="mil-logo mb-3" style="width: 180px">
 
                            <p class="mil-light mil-light-soft" style="margin-bottom: 45px">24 Colston Rise, Ampthill,
                                <br>
@@ -74,10 +74,13 @@
                                    <ul class="mil-hover-link-list mil-light">
 
                                        <li>
-                                           <a href="{{route('contact')}}">Support</a>
+                                           <a href="{{ route('contact') }}">Support</a>
                                        </li>
                                        <li>
-                                           <a href="{{route('faq')}}">FAQs</a>
+                                           <a href="{{ route('faq') }}">FAQs</a>
+                                       </li>
+                                       <li>
+                                           <a href="{{ route('privacy-policy') }}">Privacy</a>
                                        </li>
                                        <li>
                                            <a href="#.">Careers</a>
@@ -92,16 +95,16 @@
 
                                    <ul class="mil-hover-link-list mil-light">
                                        <li>
-                                           <a href="{{route('about')}}">About Us</a>
+                                           <a href="{{ route('about') }}">About Us</a>
                                        </li>
                                        <li>
-                                           <a href="{{route('services')}}">Services</a>
+                                           <a href="{{ route('services') }}">Services</a>
                                        </li>
                                        <li>
-                                           <a href="{{route('projects.all')}}">Projects</a>
+                                           <a href="{{ route('projects.all') }}">Projects</a>
                                        </li>
                                        <li>
-                                           <a href="{{route('contact')}}">Contact</a>
+                                           <a href="{{ route('contact') }}">Contact</a>
                                        </li>
 
                                    </ul>

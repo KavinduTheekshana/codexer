@@ -38,5 +38,9 @@ class HoemController extends Controller
     {
         return view('frontend.faq.index');
     }
+    public function privacy_policy()
+    {
+        return view('frontend.privacy.index');
+    }
 
 }

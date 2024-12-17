@@ -19,6 +19,7 @@ Route::get('contact', [HoemController::class, 'contact'])->name('contact');
 Route::get('projects/all', [HoemController::class, 'projects'])->name('projects.all');
 Route::get('services', [HoemController::class, 'services'])->name('services');
 Route::get('faq', [HoemController::class, 'faq'])->name('faq');
+Route::get('privacy-policy', [HoemController::class, 'privacy_policy'])->name('privacy-policy');
 Route::get('case', [ProjectController::class, 'case'])->name('case');
 Route::get('/project/{slug}', [ProjectController::class, 'view'])->name('project.view');
 Route::get('/project/all', [ProjectController::class, 'view'])->name('project.all');
