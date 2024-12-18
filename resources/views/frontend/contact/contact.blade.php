@@ -10,7 +10,7 @@
                     <div class="mil-divider mil-divider-left mil-mb-30"></div>
 
                     <h6 class="mil-mb-15"><span class="mil-accent">+ 44</span>  20 313 78 313</h6>
-                    <h6><span class="mil-accent">london</span>.support@codexer.co.uk</h6>
+                    <h6><span class="mil-accent">london</span>@codexer.co.uk</h6>
                 </div>
 
             </div>
@@ -24,7 +24,7 @@
                     <div class="mil-divider mil-divider-left mil-mb-30"></div>
 
                     <h6 class="mil-mb-15"><span class="mil-accent">+ 44</span> 7361 496391</h6>
-                    <h6><span class="mil-accent">bedford</span>.support@codexer.co.uk</h6>
+                    <h6><span class="mil-accent">bedford</span>@codexer.co.uk</h6>
                 </div>
 
             </div>
@@ -33,11 +33,11 @@
                 <div class="mil-mb-60">
                     <h4 class="mil-mb-30">Sri Lanka</h4>
                     <h5 class="mil-list-title mil-mb-15">Colombo</h5>
-                    <p class="mil-mb-30">-SRI LANKA ADDRESS HERE-</p>
+                    <p class="mil-mb-30">-</p>
                     <div class="mil-divider mil-divider-left mil-mb-30"></div>
 
                     <h6 class="mil-mb-15"><span class="mil-accent">+ 94</span> 700 30 00</h6>
-                    <h6><span class="mil-accent">colombo</span>.support@codexer.co.uk</h6>
+                    <h6><span class="mil-accent">colombo</span>@codexer.co.uk</h6>
                 </div>
 
             </div>

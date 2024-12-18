@@ -31,14 +31,12 @@
                            <img src="{{ asset('frontend/img/logo/codexer_light.svg') }}" alt=""
                                class="mil-logo mb-3" style="width: 180px">
 
-                           <p class="mil-light mil-light-soft" style="margin-bottom: 45px">24 Colston Rise, Ampthill,
-                               <br>
-                               Bedford, England MK45 2GN
+                           <p class="mil-light mil-light-soft" style="margin-bottom: 45px">464 Alexandra Ave, Rayners Lane, <br>Harrow HA2 9TL
                            </p>
 
                            <ul class="mil-simple-list mil-mb-15">
                                <li class="mil-light"><span class="mil-accent">+44</span>&nbsp;<span
-                                       class="mil-light-soft">20 313 78 313</span></li>
+                                       class="mil-light-soft">7593 340 872</span></li>
                                <li><span class="mil-accent">info</span><span
                                        class="mil-light mil-light-soft">@codexer.com</span></li>
                            </ul>
