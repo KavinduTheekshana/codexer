@@ -31,7 +31,8 @@
                            <img src="{{ asset('frontend/img/logo/codexer_light.svg') }}" alt=""
                                class="mil-logo mb-3" style="width: 180px">
 
-                           <p class="mil-light mil-light-soft" style="margin-bottom: 45px">464 Alexandra Ave, Rayners Lane, <br>Harrow HA2 9TL
+                           <p class="mil-light mil-light-soft" style="margin-bottom: 45px">464 Alexandra Ave, Rayners
+                               Lane, <br>Harrow HA2 9TL
                            </p>
 
                            <ul class="mil-simple-list mil-mb-15">
@@ -40,6 +41,16 @@
                                <li><span class="mil-accent">info</span><span
                                        class="mil-light mil-light-soft">@codexer.com</span></li>
                            </ul>
+
+                           <!-- TrustBox widget - Review Collector -->
+                           <div class="trustpilot-widget" data-locale="en-GB"
+                               data-template-id="56278e9abfbbba0bdcd568bc"
+                               data-businessunit-id="67655d49b990284ad0d84412" data-style-height="52px"
+                               data-style-width="100%">
+                               <a href="https://uk.trustpilot.com/review/codexer.co.uk" target="_blank"
+                                   rel="noopener">Trustpilot</a>
+                           </div>
+                           <!-- End TrustBox widget -->
 
                        </div>
                        <div class="col-md-8 col-lg-7 col-xl-7">

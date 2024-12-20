@@ -21,7 +21,8 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Codexer | Transforming Ideas into Digital Reality">
-    <meta name="twitter:description" content="Codexer delivers top-tier IT services including custom software development, web and mobile app solutions, cloud integration, and advanced data analytics.">
+    <meta name="twitter:description"
+        content="Codexer delivers top-tier IT services including custom software development, web and mobile app solutions, cloud integration, and advanced data analytics.">
     <meta name="twitter:image" content="{{ asset('favicon.svg') }}">
 
 
@@ -47,7 +48,9 @@
     {{-- <link rel="stylesheet" href="{{ asset('frontend/css/animtrap/animtrap.css') }}"> --}}
     @stack('styles')
     <title>Codexer | Transforming Ideas into Digital Reality</title>
-
+    <!-- TrustBox script -->
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <!-- End TrustBox script -->
     {{-- @vite(['resources/js/app.js']) --}}
 </head>
 
