@@ -52,6 +52,13 @@
     <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
     <!-- End TrustBox script -->
     {{-- @vite(['resources/js/app.js']) --}}
+
+    <style>
+        .trustpilot-widget {
+            left: -50px !important;
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
