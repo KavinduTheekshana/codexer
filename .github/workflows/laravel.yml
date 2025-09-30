@@ -13,7 +13,7 @@ jobs:
       with:
         server: ${{ secrets.SFTP_HOST }}
         username: ${{ secrets.SFTP_USERNAME }}
-        protocol: sftp
+        protocol: ftps
         port: 22
         password: ${{ secrets.SFTP_PASSWORD }} #B4ZjkCKJCbHTPFa7
           # or use 'password:' instead of private-key if you must
