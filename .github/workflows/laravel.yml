@@ -18,5 +18,5 @@ jobs:
         password: ${{ secrets.SFTP_PASSWORD }} #B4ZjkCKJCbHTPFa7
           # or use 'password:' instead of private-key if you must
         local-dir: ./              # change if you build to /dist or similar
-        server-dir: /var/www/wwwroot/codexer.co.uk
+        server-dir: /var/www/wwwroot/codexer.co.uk/
         log-level: verbose
